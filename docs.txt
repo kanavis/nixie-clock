@@ -1,0 +1,11 @@
+Преобразователь:
+http://arduino.ru/forum/apparatnye-voprosy/preobrazovatel-5-180-v-na-mega8
+
+void setup()
+{
+TCCR1B=TCCR1B&0b11111000|0x01;
+analogWrite(9,95);
+}
+ 
+void loop() {}
+
